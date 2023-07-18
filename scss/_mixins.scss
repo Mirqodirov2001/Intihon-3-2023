@@ -1,0 +1,6 @@
+@mixin setStyle($js, $ai, $columnGap) {
+  display: flex;
+  justify-content: $js;
+  align-items: $ai;
+  column-gap: $columnGap;
+}
