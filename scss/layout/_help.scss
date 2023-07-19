@@ -1,0 +1,37 @@
+#help {
+  padding: 0 40px;
+  margin-bottom: 109px;
+  h1 {
+    font-size: 32px;
+  }
+
+  .main {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+  }
+
+  .card {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    border-radius: 20px;
+    border: 1px solid var(--gray-borders, rgba(47, 43, 67, 0.15));
+    width: 560px;
+    height: 180px;
+    padding: 30px;
+    cursor: pointer;
+    &:hover {
+      box-shadow: 2px 2px 2px 2px green;
+    }
+
+    p {
+      color: var(--base-black, #140a32);
+      font-family: Open Sans, sans-serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%; /* 24px */
+    }
+  }
+}

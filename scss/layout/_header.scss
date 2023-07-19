@@ -1,209 +1,210 @@
 header {
-    margin: 40px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: #ffffff;
+  padding: 40px;
+  @extend %extend;
+
+  .text3 {
+    color: var(--gray-medium, rgba(47, 43, 67, 0.5));
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 40px;
+    cursor: pointer;
+
+    &:hover {
+      color: $main-text;
+    }
+  }
+
+  .navbar {
     @extend %extend;
-    background: var(--base-white, #fff);
-    background-color: #fff;
-    backdrop-filter: blur(10px);
-    z-index: 999;
-    .text3 {
-        color: var(--gray-medium, rgba(47, 43, 67, 0.5));
+    column-gap: 30px;
+    margin-bottom: 30px;
+
+    .input {
+      @extend %extend;
+
+      &_search {
+        position: absolute;
+        margin-left: 380px;
+      }
+    }
+
+    input {
+      width: 427px;
+      height: 52px;
+      @extend %extend;
+      padding: 14px 20px;
+      border-radius: 10px;
+      background: var(--gray-background, rgba(47, 43, 67, 0.04));
+      border: none;
+
+      &::placeholder {
+        color: var(--gray-low, rgba(47, 43, 67, 0.4));
         font-family: sans-serif;
         font-size: 16px;
+        font-style: normal;
+        font-weight: 200;
+        line-height: normal;
+      }
+    }
+  }
+
+  .btn {
+    @extend %extend;
+    width: 192px;
+    height: 52px;
+    padding: 10px 20px;
+    gap: 10px;
+    border-radius: 10px;
+    background-color: $main-bg;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $main-text;
+    }
+
+    &:active {
+      background-color: $main-text2;
+    }
+
+    p {
+      color: white;
+      font-family: sans-serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+    }
+  }
+
+  .text {
+    h2 {
+      color: #140a32;
+      font-family: sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: normal;
+      cursor: pointer;
+    }
+
+    p {
+      color: var(--gray-medium, rgba(47, 43, 67, 0.5));
+      font-family: sans-serif;
+      font-size: 14px;
+      font-style: normal;
+      line-height: normal;
+      text-align: center;
+      margin-top: 5px;
+    }
+  }
+
+  .navbar2 {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+
+    .call {
+      @extend %extend;
+      padding: 10px 20px;
+      gap: 10px;
+      border-radius: 10px;
+      border: 1px solid var(--gray-borders, rgba(47, 43, 67, 0.15));
+      width: 202px;
+      height: 44px;
+      cursor: pointer;
+
+      &:hover {
+        box-shadow: 2px 2px 2px 2px rgb(223, 235, 223);
+        background-color: #1a77a3;
+      }
+
+      &:active {
+        background-color: #ffffff;
+      }
+
+      h3 {
+        color: var(--base-black, #140a32);
+        font-family: sans-serif;
+        font-size: 16px;
+        font-style: normal;
         font-weight: 400;
-        margin-top: 40px;
-        cursor: pointer;
 
         &:hover {
-            color: $main-text;
-        }
-    }
-
-    .navbar {
-        @extend %extend;
-        column-gap: 30px;
-        margin-bottom: 30px;
-
-        .input {
-            @extend %extend;
-
-            &_search {
-                position: absolute;
-                margin-left: 380px;
-            }
-        }
-
-        input {
-            width: 427px;
-            height: 52px;
-            @extend %extend;
-            padding: 14px 20px;
-            border-radius: 10px;
-            background: var(--gray-background, rgba(47, 43, 67, 0.04));
-            border: none;
-
-            &::placeholder {
-                color: var(--gray-low, rgba(47, 43, 67, 0.4));
-                font-family: sans-serif;
-                font-size: 16px;
-                font-style: normal;
-                font-weight: 200;
-                line-height: normal;
-            }
-        }
-    }
-
-    .btn {
-        @extend %extend;
-        width: 192px;
-        height: 52px;
-        padding: 10px 20px;
-        gap: 10px;
-        border-radius: 10px;
-        background-color: $main-bg;
-        cursor: pointer;
-
-        &:hover {
-            background-color: $main-text;
+          color: #ffffff;
         }
 
         &:active {
-            background-color: $main-text2;
+          color: #140a32;
         }
-
-        p {
-            color: white;
-            font-family: sans-serif;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 400;
-        }
+      }
     }
 
-    .text {
-        h2 {
-            color: #140a32;
-            font-family: sans-serif;
-            font-size: 20px;
-            font-weight: 700;
-            line-height: normal;
-            cursor: pointer;
+    .telegram {
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+      gap: 10px;
+      border-radius: 10px;
+      border: 1px solid var(--gray-borders, rgba(47, 43, 67, 0.15));
+      width: 144px;
+      height: 44px;
+      cursor: pointer;
+
+      &:hover {
+        box-shadow: 2px 2px 2px 2px rgb(223, 235, 223);
+        background-color: #1a77a3;
+      }
+
+      &:active {
+        background-color: #ffffff;
+      }
+
+      h3 {
+        color: var(--base-black, #140a32);
+        font-family: sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+
+        &:hover {
+          color: #ffffff;
         }
 
-        p {
-            color: var(--gray-medium, rgba(47, 43, 67, 0.5));
-            font-family: sans-serif;
-            font-size: 14px;
-            font-style: normal;
-            line-height: normal;
-            text-align: center;
-            margin-top: 5px;
+        &:active {
+          color: #140a32;
         }
+      }
     }
 
-    .navbar2 {
-        margin-bottom: 30px;
-        display: flex;
-        align-items: center;
-        column-gap: 15px;
+    .nav__list {
+      @extend %extend;
+      column-gap: 30px;
+      margin-left: 35px;
 
-        .call {
-            @extend %extend;
-            padding: 10px 20px;
-            gap: 10px;
-            border-radius: 10px;
-            border: 1px solid var(--gray-borders, rgba(47, 43, 67, 0.15));
-            width: 202px;
-            height: 44px;
-            cursor: pointer;
+      &--item {
+        list-style-type: none;
 
-            &:hover {
-                box-shadow: 2px 2px 2px 2px rgb(223, 235, 223);
-                background-color: #1a77a3;
-            }
+        &-link {
+          align-items: center;
+          text-decoration: none;
+          color: var(--base-black, #140a32);
+          font-family: sans-serif;
+          font-size: 16px;
+          font-weight: 500;
 
-            &:active {
-                background-color: #ffffff;
-            }
-
-            h3 {
-                color: var(--base-black, #140a32);
-                font-family: sans-serif;
-                font-size: 16px;
-                font-style: normal;
-                font-weight: 400;
-
-                &:hover {
-                    color: #ffffff;
-                }
-
-                &:active {
-                    color: #140a32;
-                }
-            }
+          &:hover {
+            color: $main-text;
+          }
         }
-
-        .telegram {
-            display: flex;
-            align-items: center;
-            padding: 10px 20px;
-            gap: 10px;
-            border-radius: 10px;
-            border: 1px solid var(--gray-borders, rgba(47, 43, 67, 0.15));
-            width: 144px;
-            height: 44px;
-            cursor: pointer;
-
-            &:hover {
-                box-shadow: 2px 2px 2px 2px rgb(223, 235, 223);
-                background-color: #1a77a3;
-            }
-
-            &:active {
-                background-color: #ffffff;
-            }
-
-            h3 {
-                color: var(--base-black, #140a32);
-                font-family: sans-serif;
-                font-size: 16px;
-                font-style: normal;
-                font-weight: 400;
-
-                &:hover {
-                    color: #ffffff;
-                }
-
-                &:active {
-                    color: #140a32;
-                }
-            }
-        }
-
-        .nav__list {
-            @extend %extend;
-            column-gap: 30px;
-            margin-left: 35px;
-
-            &--item {
-                list-style-type: none;
-
-                &-link {
-                    align-items: center;
-                    text-decoration: none;
-                    color: var(--base-black, #140a32);
-                    font-family: sans-serif;
-                    font-size: 16px;
-                    font-weight: 500;
-
-                    &:hover {
-                        color: $main-text;
-                    }
-                }
-            }
-        }
-
-        .img {
-            margin-left: 50px;
-        }
+      }
     }
+
+    .img {
+      margin-left: 50px;
+    }
+  }
 }

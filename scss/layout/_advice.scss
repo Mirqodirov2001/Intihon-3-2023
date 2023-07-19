@@ -1,6 +1,6 @@
 #advice {
   padding: 0 40px;
-  margin-bottom: 400px;
+  margin-bottom: 90px;
 
   h1 {
     color: var(--base-black, #140a32);
@@ -32,6 +32,10 @@
     gap: 5px;
     margin-top: 30px;
     margin-bottom: 30px;
+    cursor: pointer;
+    &:hover {
+      box-shadow: 2px 2px 2px 2px;
+    }
 
     img {
       margin-bottom: 15px;
@@ -105,18 +109,14 @@
   }
   .h10 {
     color: #fff;
-    text-align: center;
-    font-family:'Open Sans SemiBold';
-    font-size: 26px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    font-family: 'Open Sans SemiBold';
+    font-size: 24px;
     margin-bottom: 20px;
-    margin-right: 40px;
     margin-right: 100px;
+    margin-top: 20px;
   }
-  .img_text{
-    p{
+  .img_text {
+    p {
       color: white;
       margin-bottom: 30px;
     }

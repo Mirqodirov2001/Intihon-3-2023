@@ -344,11 +344,11 @@ template {
 }
 
 header {
-  margin: 40px;
-  background: var(--base-white, #fff);
-  background-color: #fff;
-  backdrop-filter: blur(10px);
-  z-index: 999;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: #ffffff;
+  padding: 40px;
 }
 header .text3 {
   color: var(--gray-medium, rgba(47, 43, 67, 0.5));
@@ -513,8 +513,7 @@ header .navbar2 .img {
 }
 
 #intro {
-  position: relative;
-  padding: 0 40px;
+  margin-top: 320px;
 }
 #intro .nav__list {
   display: flex;
@@ -642,7 +641,7 @@ header .navbar2 .img {
 
 #advice {
   padding: 0 40px;
-  margin-bottom: 400px;
+  margin-bottom: 90px;
 }
 #advice h1 {
   color: var(--base-black, #140a32);
@@ -673,6 +672,10 @@ header .navbar2 .img {
   gap: 5px;
   margin-top: 30px;
   margin-bottom: 30px;
+  cursor: pointer;
+}
+#advice .card:hover {
+  box-shadow: 2px 2px 2px 2px;
 }
 #advice .card img {
   margin-bottom: 15px;
@@ -740,27 +743,771 @@ header .navbar2 .img {
 }
 #advice .h10 {
   color: #fff;
-  text-align: center;
   font-family: "Open Sans SemiBold";
-  font-size: 26px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+  font-size: 24px;
   margin-bottom: 20px;
-  margin-right: 40px;
   margin-right: 100px;
+  margin-top: 20px;
 }
 #advice .img_text p {
   color: white;
   margin-bottom: 30px;
 }
 
-header {
-  margin: 40px;
+#help {
+  padding: 0 40px;
+  margin-bottom: 109px;
+}
+#help h1 {
+  font-size: 32px;
+}
+#help .main {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20px;
+}
+#help .card {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  border-radius: 20px;
+  border: 1px solid var(--gray-borders, rgba(47, 43, 67, 0.15));
+  width: 560px;
+  height: 180px;
+  padding: 30px;
+  cursor: pointer;
+}
+#help .card:hover {
+  box-shadow: 2px 2px 2px 2px green;
+}
+#help .card p {
+  color: var(--base-black, #140a32);
+  font-family: Open Sans, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+}
+
+#call {
+  padding: 0 40px;
+  margin-bottom: 80px;
+}
+#call .main h1 {
+  font-size: 32px;
+}
+#call .main p {
+  color: var(--base-black, #140a32);
+  font-family: Open Sans, sans-serif;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  margin-bottom: 30px;
+}
+#call .text {
+  display: flex;
+  align-items: center;
+  column-gap: 48px;
+}
+#call .text .text1 h1 {
+  font-size: 28px;
+  color: #33836E;
+}
+#call .text .text1 p {
+  font-size: 16px;
+  font-family: Open Sans, sans-serif;
+  margin-bottom: 80px;
+}
+#call img {
+  margin-top: -400px;
+  margin-left: 580px;
+}
+#call .card {
+  width: 1140px;
+  height: 200px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: #33836E;
+  display: flex;
+  align-items: center;
+  margin-top: -5px;
+}
+#call .card .text5 {
+  margin-left: 60px;
+  gap: 10px;
+  text-align: center;
+}
+#call .card .text5 p {
+  width: 296px;
+  height: 33px;
+  color: var(--base-white, #fff);
+  font-family: "Open Sans SemiBold", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  margin-bottom: 10px;
+}
+#call .card .text5 h5 {
+  width: 296px;
+  height: 57px;
+  color: var(--base-white, #fff);
+  font-family: "Open Sans Bold";
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+#call .card .main1 {
+  align-items: center;
+  margin-left: 226px;
+}
+#call .card .main1 h6 {
+  color: var(--base-white, #fff);
+  font-family: "Open Sans SemiBold";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  margin-bottom: 16px;
+}
+#call .card .main1 p {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: "Open Sans SemiBold", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+#call .card .npm {
+  column-gap: 15px;
+  display: flex;
+  margin-bottom: 22px;
+}
+#call .card .npm button {
+  font-family: "Open Sans SemiBold", sans-serif;
+  font-size: 16px;
+  display: flex;
+  width: 249px;
+  height: 56px;
+  padding: 16px 36px 18px 36px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  background-color: #33836E;
+  color: #fff;
+  cursor: pointer;
+}
+#call .card .npm button:hover {
+  background-color: #81D2BC;
+}
+#call .card .npm button:active {
+  background-color: #016F52;
+}
+#call .card .npm .input1 {
+  display: flex;
+  width: 249px;
+  height: 56px;
+  padding: 7px 16px 8px 16px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3px;
+  border-radius: 10px;
   background: var(--base-white, #fff);
-  background-color: #fff;
-  backdrop-filter: blur(10px);
-  z-index: 999;
+}
+#call .card .npm .input1 p {
+  color: var(--gray-low, rgba(47, 43, 67, 0.4));
+  text-align: center;
+  font-family: "Open Sans SemiBold", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+#call .card .npm .input1 .h7 {
+  color: var(--base-black, #140a32);
+  text-align: center;
+  font-family: "Open Sans Bold" sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  line-height: normal;
+}
+
+#lawyer {
+  padding: 0 40px;
+  margin-bottom: 80px;
+}
+#lawyer h1 {
+  font-size: 32px;
+  font-family: Open Sans, sans-serif;
+}
+#lawyer .main {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20px;
+}
+#lawyer .main .card {
+  display: flex;
+  width: 560px;
+  height: 287px;
+  padding: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  border: 1px solid var(--gray-borders, rgba(47, 43, 67, 0.15));
+  cursor: pointer;
+}
+#lawyer .main .card:hover {
+  box-shadow: 2px 2px 2px 2px green;
+}
+#lawyer .main .card p {
+  color: var(--gray-high, rgba(47, 43, 67, 0.7));
+  font-family: Open Sans, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+#call2 {
+  padding: 0 40px;
+  margin-bottom: 100px;
+}
+#call2 .card {
+  width: 1140px;
+  height: 200px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: var(--gray-background, rgba(47, 43, 67, 0.04));
+  display: flex;
+  align-items: center;
+  margin-top: -5px;
+  margin-bottom: 80px;
+}
+#call2 .card .text5 h1 {
+  width: 295px;
+  height: 88px;
+  color: var(--base-black, #140a32);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.96px;
+  margin-left: 53px;
+}
+#call2 .card .npm {
+  column-gap: 15px;
+  display: flex;
+  margin-bottom: 22px;
+  align-items: center;
+  margin-left: 41px;
+  margin-top: 30px;
+}
+#call2 .card .npm button {
+  font-family: "Open Sans SemiBold", sans-serif;
+  font-size: 16px;
+  display: flex;
+  width: 210px;
+  height: 56px;
+  padding: 16px 36px 18px 36px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  background-color: #33836E;
+  color: #fff;
+  cursor: pointer;
+}
+#call2 .card .npm button:hover {
+  background-color: #81D2BC;
+}
+#call2 .card .npm button:active {
+  background-color: #016F52;
+}
+#call2 .card .npm .input1 {
+  display: flex;
+  width: 207px;
+  height: 56px;
+  padding: 7px 16px 8px 16px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3px;
+  border-radius: 10px;
+  background: var(--base-white, #fff);
+}
+#call2 .card .npm .input1 p {
+  color: var(--gray-low, rgba(47, 43, 67, 0.4));
+  text-align: center;
+  font-family: "Open Sans SemiBold", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+#call2 .card .npm .input1 .h7 {
+  color: var(--base-black, #140a32);
+  font-family: "Open Sans Bold" sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  line-height: normal;
+  margin-top: -70px;
+}
+#call2 .main1 p {
+  color: var(--gray-low, rgba(47, 43, 67, 0.4));
+  font-family: "Open Sans SemiBold", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 41px;
+}
+#call2 img {
+  margin-left: 20px;
+}
+#call2 img {
+  margin-left: 20px;
+}
+#call2 h2 {
+  width: 321px;
+  height: 44px;
+  color: var(--base-black, #140a32);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.96px;
+  margin-bottom: 20px;
+}
+#call2 p {
+  color: var(--base-black, #140a32);
+  font-family: sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  margin-bottom: 30px;
+}
+
+.card2 {
+  height: 56px;
+  display: flex;
+  padding: 16px 36px 18px 36px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: 10px;
+  background: #e0ece9;
+  cursor: pointer;
+}
+.card2:hover {
+  background-color: #81D2BC;
+}
+.card2:active {
+  background-color: #016F52;
+}
+.card2 h7 {
+  color: var(--green, #33836e);
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.card2 h7:hover {
+  color: white;
+}
+
+#client {
+  padding: 0 40px;
+  margin-bottom: 80px;
+}
+#client h1 {
+  margin-bottom: 30px;
+}
+#client .card {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
+}
+#client .main {
+  width: 367px;
+  height: 421px;
+  display: flex;
+  padding: 30px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-radius: 20px;
+  border: 1px solid var(--gray-borders, rgba(47, 43, 67, 0.15));
+  cursor: pointer;
+}
+#client .main:hover {
+  box-shadow: 2px 2px 2px 2px green;
+}
+#client .user {
+  display: flex;
+  column-gap: 15px;
+}
+#client .user img {
+  margin-top: 5px;
+}
+#client .user .text1 h1 {
+  color: var(--base-black, #140a32);
+  font-family: Open Sans, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+#client .user .text1 p {
+  color: var(--gray-medium, rgba(47, 43, 67, 0.5));
+  font-family: Open Sans, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: -25px;
+}
+#client p {
+  color: var(--base-black, #140a32);
+  font-family: Open Sans, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  margin-top: 24px;
+}
+#client h5 {
+  color: var(--gray-medium, rgba(47, 43, 67, 0.5));
+  font-family: Open Sans, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 80px;
+}
+#client h4 {
+  color: var(--green, #33836e);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+#lawyer2 {
+  padding: 0 40px;
+  margin-bottom: 80px;
+}
+#lawyer2 .main11 {
+  display: flex;
+  column-gap: 20px;
+}
+#lawyer2 .main11 .new {
+  display: inline-flex;
+  width: 657px;
+  height: 629px;
+  padding: 40px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: var(--green, #33836e);
+}
+#lawyer2 .main11 .new .text1111 {
+  display: flex;
+}
+#lawyer2 .main11 .new .text1111 .text111 h1 {
+  color: var(--base-white, #fff);
+  font-family: Open Sans, sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.96px;
+}
+#lawyer2 .main11 .new .text1111 .text111 p {
+  color: var(--base-white, #ded1d1);
+  font-family: Open Sans, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+}
+#lawyer2 .main11 .new .text12 {
+  width: 115px;
+  height: 33px;
+  display: flex;
+  padding: 5px 16px 6px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  right: 30px;
+  top: 30px;
+  border-radius: 10px;
+  background: var(--base-white, #fff);
+  cursor: pointer;
+}
+#lawyer2 .main11 .new .text12:hover {
+  background-color: #81D2BC;
+}
+#lawyer2 .main11 .new .text12:active {
+  background-color: #016F52;
+}
+#lawyer2 .main11 .new .text12 h1 {
+  color: var(--base-black, #140a32);
+  text-align: center;
+  font-family: Open Sans, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 30px;
+}
+#lawyer2 .main11 .new .text12 h1:hover {
+  color: #fff;
+}
+#lawyer2 .main11 .new input {
+  height: 213px;
+  display: flex;
+  width: 577px;
+  height: 413px;
+  padding: 12px 16px 8px 16px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3px;
+  border-radius: 10px;
+  background: var(--base-white, #fff);
+  border-radius: none;
+  text-align: start;
+}
+#lawyer2 .main11 .new input::placeholder {
+  color: var(--gray-medium, rgba(47, 43, 67, 0.5));
+  font-family: Open Sans, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+#lawyer2 .main11 .new .btn1 {
+  display: flex;
+  column-gap: 15px;
+}
+#lawyer2 .main11 .new .btn1 .card {
+  width: 137px;
+  height: 56px;
+  display: flex;
+  padding: 16px 24px 18px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  background: var(--base-black, #140a32);
+  cursor: pointer;
+}
+#lawyer2 .main11 .new .btn1 .card:hover {
+  background-color: #81D2BC;
+}
+#lawyer2 .main11 .new .btn1 .card:active {
+  background-color: #016F52;
+}
+#lawyer2 .main11 .new .btn1 .card h1 {
+  color: var(--base-white, #fff);
+  text-align: center;
+  font-family: "Open Sans SemiBold", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  margin-top: 30px;
+}
+#lawyer2 .main11 .new .btn {
+  width: 205px;
+  height: 56px;
+  display: flex;
+  padding: 7px 16px 8px 16px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3px;
+  flex: 1 0 0;
+  border-radius: 10px;
+  background: var(--base-white, #fff);
+}
+#lawyer2 .main11 .new .btn p {
+  color: var(--gray-low, rgba(47, 43, 67, 0.4));
+  text-align: center;
+  font-family: Open Sans, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+#lawyer2 .main11 .new .btn h5 {
+  color: var(--base-black, #140a32);
+  text-align: center;
+  font-family: Open Sans, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+#lawyer2 .main11 .new .m1 {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: "Open Sans SemiBold", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+#lawyer2 .main11 .new .text22 {
+  display: flex;
+  column-gap: 40px;
+}
+#lawyer2 .main11 .new .text22 .text23 h2 {
+  color: var(--base-white, #fff);
+  font-family: "Open Sans SemiBold", sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.6px;
+  margin-bottom: 10px;
+}
+#lawyer2 .main11 .new .text22 .text23 p {
+  color: var(--base-white, #ffffff);
+  font-family: sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  line-height: normal;
+}
+#lawyer2 .main {
+  width: 463px;
+  height: 128px;
+  display: grid;
+  gap: 20px;
+}
+#lawyer2 h1 {
+  color: var(--base-black, #140a32);
+  font-family: "Open Sans Bold";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: -0.96px;
+  margin-bottom: 30px;
+}
+#lawyer2 .card {
+  color: var(--base-black, #140a32);
+  padding: 20px 20px 20px 20px;
+  font-family: Open Sans;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.96px;
+  border-radius: 20px;
+  border: 1px solid var(--gray-borders, rgba(47, 43, 67, 0.15));
+  display: flex;
+  column-gap: 20px;
+  cursor: pointer;
+}
+#lawyer2 .card:hover {
+  box-shadow: 2px 2px 2px 2px green;
+}
+#lawyer2 .card .text h2 {
+  color: var(--base-black, #140a32);
+  font-family: "Open Sans SemiBold", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 5px;
+}
+#lawyer2 .card .text .p1 {
+  color: var(--base-black, #140a32);
+  font-family: "Open Sans SemiBold";
+  font-size: 16px;
+  font-style: normal;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+#lawyer2 .card .text p {
+  color: var(--gray-medium, rgba(47, 43, 67, 0.5));
+  font-family: Open Sans, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+#lawyer2 .card5 {
+  display: flex;
+  width: 467px;
+  padding: 16px 36px 18px 36px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  background: #e0ece9;
+  cursor: pointer;
+}
+#lawyer2 .card5:hover {
+  background-color: #81D2BC;
+}
+#lawyer2 .card5:active {
+  background-color: #016F52;
+}
+#lawyer2 .card5 h3 {
+  color: var(--green, #33836e);
+  text-align: center;
+  font-family: Open Sans, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+#lawyer2 .card5 h3:hover {
+  color: aliceblue;
+}
+#lawyer2 .card5 h3:active {
+  color: antiquewhite;
+}
+
+#footer {
+  padding: 0 40px;
+  margin-bottom: 274px;
+}
+#footer .main {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 20px;
+}
+#footer .main .text h1 {
+  font-size: 24px;
+}
+#footer .main .text p {
+  font-size: 16px;
+  font-family: sans-serif;
+  color: rgb(64, 67, 71);
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: #ffffff;
+  padding: 40px;
 }
 header .text3 {
   color: var(--gray-medium, rgba(47, 43, 67, 0.5));
